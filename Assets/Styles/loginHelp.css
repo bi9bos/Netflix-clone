@@ -1,0 +1,141 @@
+@import url('config.css');
+
+
+/* header{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-bottom: 1px solid #eee;
+}
+
+
+main{
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+} */
+
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-color: #000;
+}
+
+header{
+    clear: both;
+}
+
+#logo{
+    float: left;
+}
+
+header a {
+    color: #d41a1a;
+    font-weight: 700;
+}
+
+.card{
+    width: 350px;
+    margin: 0 auto;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.form{
+    margin-bottom: 50px;
+}
+
+.form h1{
+    font-size: 30px;
+    margin: 15px 0;
+    color: #fff;
+}
+input{
+    font-weight: 700;
+}
+
+.emailInput, .pwdInput{
+    position: relative;
+}
+
+form p{
+    font-weight: 545;
+    color:#858383;
+    font-size: 15px;
+    position: absolute;
+    padding: 20px;
+}
+
+form input{
+    height: 45px;
+    border-radius: 5px;
+    padding: 25px 20px 10px;
+    border: none;
+    outline: none;
+    margin: 7px auto;
+    width: 100%;
+    background: #333;
+    color: #fff;
+}
+
+form input[type='submit']{
+    padding: 5%;
+    margin-top: 30px;
+    margin-bottom: 12px;
+    font-size: 15px;
+    background-color: #d41a1a;
+}
+
+.pro{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #aaa9a9;
+}
+
+.pro input[type='checkbox']{
+    width: 0;
+}
+
+.pro a{
+    color: #aaa9a9;
+}
+
+.moreChoice {
+    color: #757373;
+}
+
+.moreChoice p{
+    font-weight: 600;
+    font-size: 14px;
+    margin: 15px 0;
+}
+
+.moreChoice p a{
+    color: #fff;
+}
+
+.moreChoice small{
+    font-weight: 500;
+    font-size: 11px;
+}
+
+.moreChoice small a{
+    color: rgb(10, 80, 200);
+}
+
+.emailInput .mail.clicked, .pwdInput .pwd.clicked{
+    margin-top: -3px;
+    font-size: 9px;
+}

@@ -1,0 +1,289 @@
+@import url('config.css');
+
+body {
+    background-color: gray;
+    position: relative;
+}
+
+header {
+    width: 100%;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+}
+
+header a:last-child {
+    padding: 7px;
+    background: red;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.introContainer {
+    height: 500px;
+    background: url(../Images/DE-en-20220905-popsignuptwoweeks-perspective_alpha_website_small.jpeg) no-repeat;
+    background-size: cover;
+}
+
+.intro {
+    padding: 150px 40px 40px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto 5px;
+    color: #fff;
+    line-height: 2em;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.intro h1 {
+    font-size: 25px;
+    line-height: 1.3em;
+    margin-bottom: 5px;
+}
+
+.intro p {
+    margin: 20px auto 5px;
+}
+
+.cta {
+    margin: 5px auto;
+}
+
+input:focus {
+    outline: none;
+}
+
+.cta input[type='email'] {
+    background: #fff;
+    border: none;
+    border-radius: 2px;
+    padding: 15px 10px;
+    width: 100%;
+    height: 45px;
+    margin: 20px 0;
+}
+
+.cta input[type='submit'] {
+    background-color: red;
+    border: none;
+    border-radius: 2px;
+    padding: 10px 20px;
+    color: #fff;
+    height: 45px;
+    word-spacing: 3px;
+}
+
+.adverts {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
+}
+
+.advert img {
+    width: 80%;
+    margin: 10px auto;
+}
+
+.advert,
+.adInfo {
+    width: 100%;
+    background: #000;
+    color: #eee;
+    padding: 20px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.advert h2,
+.adInfo h2 {
+    margin: 20px auto 10px;
+}
+
+.advert p,
+.adInfo p {
+    margin: 10px auto;
+    line-height: 1.5em;
+}
+
+.advert:first-child {
+    z-index: -2;
+}
+
+#tv {
+    position: relative;
+}
+
+#display {
+    z-index: -1;
+    position: absolute;
+    bottom: 25%;
+    left: 12%;
+    width: 74%;
+    height: 55%;
+}
+
+#screen {
+    z-index: 1;
+}
+
+.stranger {
+    /* width: 365px; */
+    padding: 20px auto;
+    position: relative;
+}
+
+.downloading {
+    position: absolute;
+    bottom: 12%;
+    left: 22%;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* width: max-content; */
+    /* justify-content: space-between; */
+    width: 55%;
+    height: 20%;
+    background: #000;
+    border-radius: 10px;
+    border: 2px solid gray;
+}
+
+.download-text {
+    margin: 0 20px 0 10px;
+    /* margin-left: -20px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.downloading h5 {
+    font-size: 12px;
+}
+
+.downloading small {
+    font-size: 10px;
+}
+
+.downloading img {
+    height: 85%;
+    /* width: 20px; */
+    width: 15%;
+}
+
+.downloading img:last-child {
+    height: 70%;
+}
+
+.faq {
+    background: #000;
+    padding: 40px 0 10px;
+    width: 100%;
+    color: #fff;
+}
+
+.faq h2 {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.faq-card {
+    max-width: 700px;
+    text-align: left;
+    margin: 5px auto;
+}
+
+.question,
+.answer {
+    padding: 20px;
+    background: #333;
+}
+
+.question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1px;
+}
+
+.answer {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+#cta {
+    background: #000;
+    padding: 10px 20px 40px;
+    width: 100%;
+    margin: 0 auto 5px;
+    color: #fff;
+}
+
+#cta .cta {
+    max-width: 700px;
+}
+
+footer {
+    margin-top: 0;
+}
+
+@media screen and (min-width:1000px) {
+
+    .cta {
+        display: flex;
+        align-items: center;
+        height: 60px;
+        justify-content: center;
+    }
+
+    .intro, .introContainer{
+        height: 1000px;
+    }
+
+    .intro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: xx-large;
+    }
+
+    .adInfo{
+        text-align: left;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .advert{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .advert > div {
+        width: 35%;
+    }
+    input[type='email']{
+        max-width: 600px;
+        border-radius: 2px 0 0 2px;
+    }
+
+    .advert:first-child{
+        text-align: right;
+        flex-direction: row;
+    }
+
+    .advert{
+        text-align: left;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+}

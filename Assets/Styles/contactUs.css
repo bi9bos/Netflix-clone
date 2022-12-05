@@ -1,0 +1,111 @@
+@import url('config.css');
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* height: 100px; */
+    color: #fff;
+    background-color: #000;
+    padding: 10px 20px;
+}
+
+.left-nav, .right-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-nav > p {
+    padding: 3px 10px;
+    border-left: 2px solid #ccc;
+    border-radius: 1px;
+}
+
+.right-nav a{
+    color: #333;
+    padding: 7px 15px;
+    margin-right: 15px;
+    border-radius: 2px;
+    background: #eee;
+}
+
+.right-nav a:last-child{
+    color: #fff;
+    background: red;
+    padding: auto 25px;
+}
+
+main{
+    text-align: left;
+    padding: 40px 20px;
+}
+
+main > a{
+    color: red;
+    margin: 10px 0;
+}
+
+main > a img{
+    margin-right: 10px;
+}
+
+h1{
+    margin: 25px 0;
+}
+
+section{
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0 40px;
+    color: #555;
+}
+
+section:last-child{
+    border-bottom: none;
+}
+
+section h3{
+    margin: 10px 0;
+}
+
+section p{
+    font-weight: 500;
+    margin: 10px 0 35px;
+}
+
+.apps img{
+    width: 120px;
+}
+
+#question{
+    margin: 10px 0 -10px;
+}
+
+section a{
+    color: red;
+}
+
+.cta{
+    border: 1px solid #ccc;
+    padding: 15px 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #555;
+}
+
+select{
+    background: none;
+    border: 1px solid #ccc;
+    color: #ccc;
+    padding: 10px;
+    font-weight: 600;
+    
+}
+
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
