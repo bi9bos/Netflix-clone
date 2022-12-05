@@ -1,5 +1,6 @@
 # Netflix-clone
 This is a rip-off 😜 of Netflix UI but with static functionalities
+Visit the live-site at https://benign-netflix-clone.netlify.app/
 
 # This a a practice project cloning Netflix static UI
 
